@@ -1,6 +1,6 @@
 # GitHub username: CtheBoyd
 # Date: 4/12/2022
-# Description: Returns max/min on user chosen, at random, number of user inputs.
+# Description: Two players. First player chooses an integer. Second player has to guess it.
 #
 
 print ("Enter the integer for the player to guess.")
