@@ -2,13 +2,12 @@
 # Date: 4/12/2022
 # Description: Returns the factors of a user provided positive integer.
 #
-#user_input = x
-#factors_of_input = y
-x = int(input("Please enter a positive integer: "))
-print ("The factors of", x, "are:")
-for y in range(1, x+1):
-     if x % y == 0:
-         print(y)
+
+input_1 = int(input("Please enter a positive integer: "))
+print ("The factors of", input_1, "are:")
+for num in range(1, input_1 +1):
+     if input_1 % num == 0:
+         print(num)
 
 
 

@@ -2,23 +2,21 @@
 # Date: 4/12/2022
 # Description: Two players. First player chooses an integer. Second player has to guess it.
 #
-#player_1 = x
-#player_2 = y
-#attempts = z
+
 print ("Enter the integer for the player to guess.")
-x = int(input())
+player_1 = int(input())
 print("Enter your guess.")
-y = int(input())
-z = 0
-while x != y:
-    z += 1
-    if y > x:
+player_2 = int(input())
+attempts = 0
+while player_1 != player_2:
+    attempts += 1
+    if player_2 > player_1:
         print ("Too high - try again:")
-        y = int(input())
-    elif y < x:
+        player_2 = int(input())
+    elif player_2 < player_1:
         print ("Too low - try again:")
-        y = int(input())
-if y == x:
-    z += 1
-    print ("you guessed it in", z, "tries.")
+        player_2 = int(input())
+if player_2 == player_1:
+    attempts += 1
+    print ("you guessed it in", attempts, "tries.")
 

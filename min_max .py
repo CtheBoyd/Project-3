@@ -3,19 +3,18 @@
 # Date: 4/12/2022
 # Description: Returns max/min on user chosen, at random, number of user inputs.
 #
-#user_input = x
-#subsequent_input = y
+
 print ("How many integers would you like to enter")
-x = int(input())
-print("please enter",x, " integers" )
+input_1 = int(input())
+print("please enter", input_1, " integers" )
 min = 1.7976931348623157e+308
-max = 0
-for num in range(0, x):
-    y = int(input())
-    if y < min:
-       min = y
-    if y > max:
-        max = y
+max = -1.7976931348623157e+308
+for num in range(0, input_1):
+    input_2 = int(input())
+    if input_2 < min:
+       min = input_2
+    if input_2 > max:
+        max = input_2
 print("min:", min)
 print("max:", max)
 
