@@ -4,7 +4,7 @@
 #
 #player_1 = x
 #player_2 = y
-attempts = z
+#attempts = z
 print ("Enter the integer for the player to guess.")
 x = int(input())
 print("Enter your guess.")
