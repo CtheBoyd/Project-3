@@ -8,9 +8,12 @@ x = int(input())
 print("Enter your guess.")
 y = int(input())
 if y < x:
+    z = False
     print ("too low - try again:")
 elif y > x:
+    z = False
     print ("too high - try again:")
 
-elif True:
+elif y == x:
+    z = True
     print ("You guessed it in", total, "tries.")
