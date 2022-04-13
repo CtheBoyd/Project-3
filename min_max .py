@@ -7,7 +7,7 @@ input_1 = int(input(("How many integerts would you like to enter?\n")))
 print("Please enter" + " " + str(input_1) + " " + "integers.")
 min = 1.7976931348623157e+308
 max = -1.7976931348623157e+308
-for num in range(1.7976931348623157e+308, input_1):
+for num in range(-1.7976931348623157e+308, input_1):
     input_2 = int(input())
     if input_2 < min:
        min = input_2
