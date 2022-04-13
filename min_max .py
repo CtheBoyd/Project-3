@@ -5,10 +5,10 @@
 #
 print ("How many integers would you like to enter?")
 input_1 = int(input())
-print("please enter",input_1, " integers." )
+print("Please enter",input_1, " integers." )
 min = 1.7976931348623157e+308
 max = 0
-for i in range(0, input_1):
+for num in range(0, input_1):
     input_2 = int(input())
     if input_2 < min:
        min = input_2
