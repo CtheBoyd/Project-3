@@ -2,7 +2,9 @@
 # Date: 4/12/2022
 # Description: Two players. First player chooses an integer. Second player has to guess it.
 #
-
+#player_1 = x
+#player_2 = y
+attempts = z
 print ("Enter the integer for the player to guess.")
 x = int(input())
 print("Enter your guess.")
