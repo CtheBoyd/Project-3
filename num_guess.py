@@ -7,13 +7,16 @@ print ("Enter the integer for the player to guess.")
 x = int(input())
 print("Enter your guess.")
 y = int(input())
-if y < x:
-    z = False
-    print ("too low - try again:")
-elif y > x:
-    z = False
-    print ("too high - try again:")
+z = 0
+while x != y:
+    z += 1
+    if y > x:
+        print ("Too high - try again:")
+        y = int(input())
+    elif y < x:
+        print ("Too low - try again:")
+        y = int(input())
+if y == x:
+    z += 1
+    print ("you guessed it in", z, "tries.")
 
-elif y == x:
-    z = True
-    print ("You guessed it in", total, "tries.")
